@@ -1,0 +1,103 @@
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+table, tr, td {
+  border: 2px solid silver;
+  align-items: center;
+  text-align: center;
+  font-family: 'Merriweather';
+  font-size: small;
+} 
+
+fieldset {
+  padding:10px;
+  border-radius:10px;
+  border-style:outset
+}
+
+label {
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+input {
+  margin-right:40px;
+  width:150px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Merriweather";
+  font-size: x-small;
+  border-style:outset
+}
+
+input:invalid {
+  background-color:rgb(228, 213, 213);
+}
+
+input:valid {
+  background-color:rgb(225, 235, 210);
+}
+
+
+tr,td {
+  background-color:whitesmoke;
+}
+
+html, body {
+  background-color:rgb(189, 181, 173);
+}
+
+#Title, h2 {
+  font-family: 'Lobster';
+  font-weight: 200;
+  text-align: center;
+  color: white;
+}
+
+#addmovie{
+  font-family: "Merriweather";
+  font-size:x-small;
+  border-radius: 10px;
+  border-style:outset;
+}
+
+button{
+  border-radius: 10px;
+  border-style:outset;
+}
+
+
+.center-table{
+  margin: 0 auto;
+}
+.center-input{
+  display: block;
+  margin: 0 auto;
+}
+
+legend{
+  font-family: "Merriweather";
+  font-size: small;
+  color: white;
+}
+
+.hidden {
+  display:none;
+}
+
+.visible {
+  display:block;
+}
+
+.movie-image{
+  width: 100px;
+  height:auto;
+}
+
+.trashbin-icon {
+  width:20px;
+  height:20px;
+  cursor: pointer;
+}
+

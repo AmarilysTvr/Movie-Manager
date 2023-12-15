@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>	
+  <title>Movie manager</title>
+  <img id="trashbin-icon" src="./assets/logo/yHyDPio.png" href="https://i.imgur.com/yHyDPio.png">
+  <link rel="stylesheet" href="./css/style.css"/>
+  <script src="./js/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonbon&family=Bungee+Outline&family=Bungee+Shade&family=Bungee+Spice&family=Lobster&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body> 
+	<h1 id="Title">Filmeo</h1>
+	
+		<table id="resultTable" class="center-table">
+		<tbody id="tableResultBody"></tbody>
+	</table>
+	<label>
+	<input type="text" id="search" oninput="filtrerDonnees(this.value)" placeholder="Search" class="center-input"></label>
+
+
+	<form onsubmit="return formSubmitted();">
+	 <fieldset>
+    	<legend>Movie planner</legend>
+		<label for="name"> 
+		<input type="text" id="name" required placeholder="Movie name"></label>
+
+		<label>
+		<input type="text" id="imageSrc" name="imageSrc" required placeholder="Image URL"></label>
+		
+		<label>
+		<input type="text" id="mainActors" name="mainActors" required placeholder="Main actors"></label>
+		
+		<label>
+		<input type="text" id="director" name="director" required placeholder="Director of the movie"></label>
+		
+		<label>
+		<input type="text" id="availableOn" name="availableOn" required placeholder="Available on"></label>
+
+		<label>
+		<input type="number" id="year" name="year" required placeholder="Year"></label>	
+
+		<button type="submit" id="addmovie">Add</button>
+		 </fieldset>
+	</form>
+
+	
+  <h2>List of movies</h2> 
+  <div id="movies"></div>
+	<p>	
+	<button onclick="emptyList();">Empty</button> 
+	<button onclick="saveList();">Save</button> 
+   	<button onclick="loadList();">Load</button>
+	</p>
+
+</body>
+</html>

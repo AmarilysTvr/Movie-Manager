@@ -335,7 +335,3 @@ function assignTrashbinEventListeners() {
 	});
 }
 
-function loadList() {
-	cm.load();
-	cm.displayMoviesAsATable("movies");
-}

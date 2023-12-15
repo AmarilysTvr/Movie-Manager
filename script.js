@@ -253,7 +253,7 @@ class MovieManager {
 		//creer le header row du tableau
 		var headerRow = table.createTHead().insertRow(0);
 		// creer les header cells 
-		var headers = ["Name", "Image ", "Main Actors", "Director", "Available On", "Year"];
+		var headers = ["Name", "Image ", "Available On","Main Actors", "Director", "Year"];
 		for (var i = 0; i < headers.length;i++) {
 			var headerCell = headerRow.insertCell(i);
 			headerCell.innerHTML = headers[i];

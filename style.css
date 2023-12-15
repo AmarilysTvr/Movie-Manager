@@ -12,14 +12,27 @@ table, tr, td {
 
 fieldset {
   padding:10px;
-  border-radius:10px;
-  border-style:outset
+  border-radius:20px;
+  border-style:outset;
 }
 
 label {
   display:inline-block;
   margin-bottom:10px;
+
 }
+
+input {
+    border-radius: 20px;
+    text-emphasis-color: white;
+    background: rgb(209, 209, 175);
+    background: linear-gradient(0deg, rgb(214, 211, 226) 0%, rgba(196, 196, 196, 0.384) 100%);
+    border: none;
+  }
+  input:hover {
+     background: rgb(202, 214, 174);
+  background: linear-gradient(0deg, rgb(201, 191, 226) 0%, rgb(200, 206, 211) 100%);
+  }
 
 input {
   margin-right:40px;
@@ -28,7 +41,7 @@ input {
   text-align: center;
   font-family: "Merriweather";
   font-size: x-small;
-  border-style:outset
+  border-style:outset;
 }
 
 input:invalid {
@@ -53,6 +66,10 @@ html, body {
   font-weight: 200;
   text-align: center;
   color: white;
+  border:1px solid whitesmoke;
+  border-width: 3px;
+  border-radius: 40px;
+  display:list-item
 }
 
 #addmovie{
